@@ -1,12 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Header from '@/components/Header';
+import Benefits from '@/components/Benefits';
+import Testimonials from '@/components/Testimonials';
+import SpecialOffer from '@/components/SpecialOffer';
+import Bonuses from '@/components/Bonuses';
+import UrgencyTimer from '@/components/UrgencyTimer';
+import Faq from '@/components/Faq';
+import Footer from '@/components/Footer';
+import { useToast } from "@/components/ui/use-toast";
 
 const Index = () => {
+  const { toast } = useToast();
+  
+  useEffect(() => {
+    // Show welcome toast after a short delay
+    const timer = setTimeout(() => {
+      toast({
+        title: "Bem-vindo(a)!",
+        description: "Esta oferta é por tempo limitado. Não perca esta oportunidade divina!",
+        duration: 6000,
+      });
+    }, 3000);
+    
+    return () => clearTimeout(timer);
+  }, [toast]);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-background">
+      <UrgencyTimer />
+      <Header />
+      <Benefits />
+      <Testimonials />
+      <Bonuses />
+      <SpecialOffer />
+      <Faq />
+      <Footer />
     </div>
   );
 };
