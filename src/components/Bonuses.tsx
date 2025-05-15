@@ -39,8 +39,8 @@ const Bonuses = () => {
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">{bonus.title}</h3>
               <p className="text-center">{bonus.description}</p>
-              <div className="absolute -top-3 -right-3 bg-red-500 text-white rounded-full px-3 py-1 text-sm font-bold">
-                GRÁTIS
+              <div className="absolute -top-3 -right-3 bg-red-600 text-white rounded-full px-3 py-1 text-sm font-bold">
+                EXCLUSIVOS
               </div>
             </div>
           ))}

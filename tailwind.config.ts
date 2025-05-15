@@ -67,9 +67,9 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         spiritual: {
-          light: '#E5DEFF',
-          DEFAULT: '#9b87f5',
-          dark: '#6A5ACD',
+          light: '#FFEBEE',
+          DEFAULT: '#ea384c',
+          dark: '#C62828',
         },
         gold: {
           light: '#F0E6A4',
@@ -111,10 +111,10 @@ export default {
         },
         'divine-glow': {
           '0%, 100%': {
-            boxShadow: '0 0 5px #9b87f5'
+            boxShadow: '0 0 5px #ea384c'
           },
           '50%': {
-            boxShadow: '0 0 20px #9b87f5'
+            boxShadow: '0 0 20px #ea384c'
           }
         }
       },
@@ -126,7 +126,7 @@ export default {
         'divine-glow': 'divine-glow 3s infinite'
       },
       backgroundImage: {
-        'gradient-spiritual': 'linear-gradient(135deg, #E5DEFF 0%, #FFDEE2 100%)',
+        'gradient-spiritual': 'linear-gradient(135deg, #FFEBEE 0%, #FFDEE2 100%)',
         'gradient-gold': 'linear-gradient(90deg, #F0E6A4 0%, #D4AF37 100%)',
       },
       fontFamily: {

@@ -7,74 +7,74 @@
 
 @layer base {
   :root {
-    --background: 260 50% 98%;
-    --foreground: 260 10% 20%;
+    --background: 0 50% 98%;
+    --foreground: 0 10% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 260 10% 20%;
+    --card-foreground: 0 10% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 260 10% 20%;
+    --popover-foreground: 0 10% 20%;
 
-    --primary: 260 75% 60%;
+    --primary: 0 75% 60%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 42 70% 55%;
     --secondary-foreground: 0 0% 20%;
 
-    --muted: 260 20% 94%;
-    --muted-foreground: 260 10% 50%;
+    --muted: 0 20% 94%;
+    --muted-foreground: 0 10% 50%;
 
-    --accent: 260 40% 90%;
-    --accent-foreground: 260 10% 20%;
+    --accent: 0 40% 90%;
+    --accent-foreground: 0 10% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 30% 90%;
-    --input: 260 30% 90%;
-    --ring: 260 75% 60%;
+    --border: 0 30% 90%;
+    --input: 0 30% 90%;
+    --ring: 0 75% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 260 50% 98%;
-    --sidebar-foreground: 260 10% 20%;
-    --sidebar-primary: 260 75% 60%;
+    --sidebar-background: 0 50% 98%;
+    --sidebar-foreground: 0 10% 20%;
+    --sidebar-primary: 0 75% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 260 40% 90%;
-    --sidebar-accent-foreground: 260 10% 20%;
-    --sidebar-border: 260 30% 90%;
-    --sidebar-ring: 260 75% 60%;
+    --sidebar-accent: 0 40% 90%;
+    --sidebar-accent-foreground: 0 10% 20%;
+    --sidebar-border: 0 30% 90%;
+    --sidebar-ring: 0 75% 60%;
   }
 
   .dark {
-    --background: 260 20% 10%;
-    --foreground: 260 10% 90%;
+    --background: 0 20% 10%;
+    --foreground: 0 10% 90%;
 
-    --card: 260 20% 10%;
-    --card-foreground: 260 10% 90%;
+    --card: 0 20% 10%;
+    --card-foreground: 0 10% 90%;
 
-    --popover: 260 20% 10%;
-    --popover-foreground: 260 10% 90%;
+    --popover: 0 20% 10%;
+    --popover-foreground: 0 10% 90%;
 
-    --primary: 260 75% 60%;
+    --primary: 0 75% 60%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 42 70% 55%;
     --secondary-foreground: 0 0% 20%;
 
-    --muted: 260 20% 20%;
-    --muted-foreground: 260 10% 70%;
+    --muted: 0 20% 20%;
+    --muted-foreground: 0 10% 70%;
 
-    --accent: 260 20% 20%;
-    --accent-foreground: 260 10% 90%;
+    --accent: 0 20% 20%;
+    --accent-foreground: 0 10% 90%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 20% 30%;
-    --input: 260 20% 30%;
-    --ring: 260 75% 60%;
+    --border: 0 20% 30%;
+    --input: 0 20% 30%;
+    --ring: 0 75% 60%;
   }
 }
 
@@ -94,19 +94,19 @@
 
 @layer components {
   .spiritual-box {
-    @apply bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg border border-spiritual/30 p-6;
+    @apply bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg border border-red-300/30 p-6;
   }
 
   .cta-button {
-    @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 animate-pulse-gentle;
+    @apply bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transition-all duration-300 animate-pulse-gentle;
   }
 
   .benefit-icon {
-    @apply text-spiritual-dark text-2xl mb-3;
+    @apply text-red-700 text-2xl mb-3;
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-spiritual-dark to-spiritual;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-700 to-red-500;
   }
 }
 
