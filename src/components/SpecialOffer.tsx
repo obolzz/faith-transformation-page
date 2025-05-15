@@ -40,16 +40,8 @@ const SpecialOffer = () => {
           </div>
           
           <div className="w-full py-4">
-            <BuyButton scrollToId="payment-iframe" />
+            <BuyButton />
           </div>
-        </div>
-        
-        <div id="payment-iframe" className="mt-12 rounded-lg overflow-hidden shadow-xl">
-          <iframe 
-            src="https://pay.cakto.com.br/nmr3rpd_296397" 
-            className="w-full h-[600px] border-none"
-            title="Checkout Seguro"
-          ></iframe>
         </div>
       </div>
     </section>
