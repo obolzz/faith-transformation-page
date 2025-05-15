@@ -6,11 +6,11 @@ import BuyButton from './BuyButton';
 const Bonuses = () => {
   const bonuses = [
     {
-      title: "E-book "Sinais Divinos"",
+      title: 'E-book "Sinais Divinos"',
       description: "Aprenda a reconhecer os sinais que Deus envia para sua vida diariamente."
     },
     {
-      title: "Manual "Segredos de Salomão"",
+      title: 'Manual "Segredos de Salomão"',
       description: "Sabedoria ancestral para prosperidade e sucesso em todas as áreas da vida."
     },
     {
