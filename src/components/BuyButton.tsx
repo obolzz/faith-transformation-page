@@ -13,7 +13,7 @@ const BuyButton = ({ scrollToId = "checkout" }: { scrollToId?: string }) => {
       }
     }
     
-    // Redirect to Cakto page as fallback or default behavior
+    // Redirect to Cakto payment page
     window.open("https://pay.cakto.com.br/nmr3rpd_296397", "_blank");
   };
 
