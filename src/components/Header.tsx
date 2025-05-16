@@ -28,7 +28,7 @@ const Header = () => {
           </div>
           
           <div className="text-center mt-6">
-            <BuyButton />
+            <BuyButton scrollToId="checkout" />
           </div>
         </div>
         
