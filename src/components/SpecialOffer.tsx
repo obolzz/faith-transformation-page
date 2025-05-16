@@ -40,7 +40,7 @@ const SpecialOffer = () => {
           </div>
           
           <div className="w-full py-4">
-            <BuyButton />
+            <BuyButton scrollToId={undefined} />
           </div>
         </div>
       </div>
